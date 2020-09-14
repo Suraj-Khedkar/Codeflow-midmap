@@ -16,7 +16,7 @@
                 <span class="ml-3 text-xl">Interactive MindMap</span>
               </a>
               <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-                <a class="mr-5 hover:text-gray-900" href="{% url 'index' %}">Home</a>
+                <a class="mr-5 hover:text-gray-900" href="{% url 'indexs' %}">Home</a>
                 <a class="mr-5 hover:text-gray-900" href="{% url 'about' %}">About us</a>
                 <a class="mr-5 hover:text-gray-900" href="{% url 'logout' %}">Logout {{ request.user.first_name }}</a>
                 <a class="mr-5 hover:text-gray-900">Signup</a>
@@ -37,7 +37,7 @@
                 </h1>
                 <p class="mb-8 leading-relaxed">This is simply a drag and drop interactive website to draw illusion that are in your minds</p>
                 <div class="flex justify-center">
-                  <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Get Started</button>
+                  <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"><a href="{% url 'index' %}">Get Started</a></button>
                   <button class="ml-4 inline-flex text-gray-700 bg-gray-200 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded text-lg">Skip Tutorial</button>
                 </div>
               </div>

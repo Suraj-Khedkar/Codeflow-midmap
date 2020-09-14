@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>New Event</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'deck/eventpane.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'deck/style.css' %}" />
+
+
+
+    <link rel="stylesheet" type="text/css" href="{% static 'deck/coin-slider.css' %}" />
+    <script type="text/javascript" src="{% static 'deck/js/timeline.js' %}"></script>
+    <script type="text/javascript" src="{% static 'deck/js/cufon-yui.js' %}"></script>
+<script type="text/javascript" src="{% static 'deck/js/cufon-georgia.js' %}"></script>
+<script type="text/javascript" src="{% static 'deck/js/jquery-1.4.2.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'deck/js/script.js' %}"></script>
+<script type="text/javascript" src="{% static 'deck/js/coin-slider.min.js' %}"></script>
+
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <div class="header_resize">
+      <div class="menu_nav">
+        <ul>
+          <li ><a href="../"><span>Deck</span></a></li>
+          <li class="active"><a href="newevent"><span>New+</span></a></li>
+          <li><a href="../stats"><span>Stats</span></a></li>
+          <li><a href="../setting"><span>Settings</span></a></li>
+          <li ><a href="../profile"><span>Profile</span></a></li>
+        </ul>
+      </div>
+      <div class="logo">
+        <h1><span>New+</span></h1>
+      </div>
+      <div class="clr"></div>
+
+    </div>
+
+
+
+  </div>
+
+
+
+  <div class="content">
+     <div class="content_resize">
+         <div id="form-main">
+
+  <div id="form-div">
+      <h1 style=" color:white">Get Started!</h1>
+    <form class="form" id="form1">
+
+        <br><br>
+      <p class="name">
+        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Event Name" id="name" />
+      </p>
+
+      <p class="email">
+        <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Due Date" />
+      </p>
+
+      <p class="text">
+        <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Description"></textarea>
+      </p>
+
+
+      <div class="submit">
+        <input type="submit" value="Create" id="button-blue"/>
+        <div class="ease"></div>
+      </div>
+    </form>
+  </div>
+</div>
+
+      <div class="clr"></div>
+    </div>
+  </div>
+
+<br><br><br>
+
+
+
+</div>
+</body>
+</html>
