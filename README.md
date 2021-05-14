@@ -1,3 +1,3 @@
 # star-coder
 Codeflow mindmap
-this is project made by dark phoneix which is still in progress
+this is a project made in collaboration with dark phoneix which is still under progress
